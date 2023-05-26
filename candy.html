@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>candy</title>
+    <title>Document</title>
     <link rel="stylesheet" href="candy.css">
 </head>
 <body>
-    <div class="container">
-        <div class="welcome">
-            <h1>Welcome to my candy shop</h1>
-            <h1>what candy do you want to buy?</h1>
+    <form action="action_page.php" method="post">
+        <div class="imgcontainer">
+          <img src="https://w7.pngwing.com/pngs/798/436/png-transparent-computer-icons-user-profile-avatar-profile-heroes-black-profile.png"
+           alt="Avatar" class="avatar">
         </div>
-         <div class="une">
-            <p>sneakers=2500</p>
-            <p>bonobon=3000</p>
-            <p>alilabala=1500</p>
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit"
+          onclick="window.location.href = 'hi.html';">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
         </div>
-          <hr>
-          <input type="text" id="candy">
-         <h1>How many?</h1>
-         <input type="Number" id="too"> <button onclick="toots()">Buy</button>
-         <h1>tanii tulbur</h1>
-         <p id="hariu"></p>
-
-        <script src="candy.js"></script>
-    </div>
+      
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
 </body>
 </html>
